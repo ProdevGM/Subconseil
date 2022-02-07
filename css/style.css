@@ -1,0 +1,314 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, button, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+/*     list-style: none; */
+}
+
+
+/* ---------- GENERAL ---------- */
+
+html{font-family: 'Sora', sans-serif; font-size: 100%;}
+
+input[type="submit"],
+button{cursor: pointer;}
+
+.jaune{color: #fbb900;}
+.bleu{color: #0094a5;}
+.gras{font-weight: bold;}
+
+
+/* ---------- HEADER ---------- */
+
+    /* ----- HEADER ----- */
+
+header{display: none;}
+
+    /* ----- NAVBAR ----- */
+
+.nav-bar{margin-bottom: 1.5rem; z-index: 1000; background: linear-gradient(0.25turn, rgb(204,234,237) 65%, rgb(0,148,165)); position: sticky; top: 0;}
+.nav-bar .navbar{padding: 0;}
+.nav-bar .navbar .navbar-brand{padding: 0.2rem; margin-left: 0;}
+.nav-bar .navbar .navbar-brand img{width: 8rem; vertical-align: middle;}
+.nav-bar .navbar ul li:first-child{ margin-top: 0.8rem;}
+.nav-bar .navbar ul li a.nav-link{position :relative; width: fit-content; padding: 0.4rem 0.7rem; margin: 0 auto; color: black; border-radius: 30px; font-size : 0.688rem;}
+.nav-bar .navbar ul li a.nav-link::after{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: inline-block; content:''; width: 0; height: 0.13rem; background-color: #0094a5; transition: .5s ease;}
+.nav-bar .navbar ul li a.connecter{ background-color: #fbb900; margin-bottom: 0.8rem;}
+
+.nav-bar .block-connexion{display: none; position: absolute; bottom: -0.73rem; right: 2rem;}
+.nav-bar .block-connexion .ss-block-connexion{display: none; background: center / contain no-repeat url('../images/site/bg_connexion.png');}
+.nav-bar .block-connexion .ss-block-connexion a{display: inline-block; text-align: center; padding: 1.8rem 1.2em 1rem;}
+.nav-bar .block-connexion .ss-block-connexion a img{width: 2rem;}
+.nav-bar .block-connexion .ss-block-connexion a p{font-size: 0.475rem;}
+
+.nav-bar .block-connexion-scroll-logo{display: none; position: absolute; bottom: 0.15rem; left: 1rem;}
+.nav-bar .block-connexion-scroll-logo .ss-block-connexion-scroll-logo{display: none;}
+.nav-bar .block-connexion-scroll-logo .ss-block-connexion-scroll-logo a {display: inline-block;}
+.nav-bar .block-connexion-scroll-logo .ss-block-connexion-scroll-logo a img{width: 10rem; vertical-align: middle;}
+
+.nav-bar .block-connexion-scroll{display: none; position: absolute; margin-right: -0.6rem; bottom: 0rem; right: 0;}
+.nav-bar .block-connexion-scroll .ss-block-connexion-scroll{display: none; background: no-repeat url('../images/site/bg_connexion.png');}
+.nav-bar .block-connexion-scroll .ss-block-connexion-scroll a{display: inline-block; padding: 1.8rem 1.22em 0.65rem;}
+.nav-bar .block-connexion-scroll .ss-block-connexion-scroll a img{width: 1.7rem; vertical-align: middle;}
+.nav-bar .block-connexion-scroll .ss-block-connexion-scroll a p{display: inline-block; font-size: 0.475rem;}
+
+            /* --- BURGER --- */
+
+.nav-bar .navbar .navbar-toggler{width: 2.3rem; height: 1.375rem; cursor: pointer; position: relative;}
+.nav-bar .navbar .navbar-toggler .burger{width: 100%; height: 0.25rem; background-color: white; display: block; position: absolute; top: 50%; transform: translateY(-50%); border-radius: 5px;}
+.nav-bar .navbar .navbar-toggler .burger::before,
+.nav-bar .navbar .navbar-toggler .burger::after{content: ''; position: absolute; left: 0; width: 100%; height: 0.25rem; background-color: white; order-radius: 5px;}
+.nav-bar .navbar .navbar-toggler .burger::before{transform: translateY(-0.55rem);}
+.nav-bar .navbar .navbar-toggler .burger::after{transform: translateY(0.55rem);}
+.navbar-toggler:focus{box-shadow: none;}
+
+            /* --- FIN BURGER ---*/
+
+
+/* ---------- ACCUEIL ---------- */
+
+.accueil .section1{text-align: center;}
+.accueil .section1 div{margin: 1.5rem 0;}
+.accueil .section1 div:first-child{margin-top: 0;}
+.accueil .section1 .titre1 .jaune{font-size: 1.957rem; font-weight: bold;}
+.accueil .section1 .titre1 .bleu{font-size: 1.286rem; font-weight: bold;}
+.accueil .section1 .titre2 .jaune{font-size: 1.094rem; font-weight: bold;}
+.accueil .section1 .titre2 .bleu{font-size: 0.656rem;}
+
+.accueil .section2 .block1 .image{text-align: center;}
+.accueil .section2 .block1 .image img{width: 80%; vertical-align: middle;}
+.accueil .section2 .block1 .entête{margin: 0.8rem 0; font-size: 1.25rem;}
+.accueil .section2 .block2 .corps .ss-corps{margin-bottom: 0.9rem;}
+.accueil .section2 .block2 .corps .ss-corps p{font-size: 0.875rem; color: white; margin-bottom: 0.4rem;}
+.accueil .section2 .block2 .corps .ss-corps ul li{font-size: 0.688rem; color: white;}
+.accueil .section2a{margin-top: 3.5rem;}
+.accueil .section2a .partie1,
+.accueil .section2a .partie2{padding-bottom: 2.5rem;}
+.accueil .section2a .partie1,
+.accueil .section2a .partie3{background-color: #0094a5;}
+.accueil .section2a .partie2{background-color: #6dbcd5;}
+.accueil .section2a .onglet{text-align: center;}
+.accueil .section2a .partie1 .onglet p,
+.accueil .section2a .partie3 .onglet p{background-color: #0094a5;}
+.accueil .section2a .partie2 .onglet p{background-color: #6dbcd5;}
+.accueil .section2a .onglet p{ display: inline-block; position: relative; top: -1.4rem; background-color: #0094a5; font-size: 0.688rem; padding: 0.3rem 2rem; border-top-left-radius: 10px; border-top-right-radius: 10px; color: white;}
+.accueil .section2b{display: none;}
+.accueil .section2b #tabs .contenant{background-color: #0094a5;}
+.accueil .section2b #tabs .onglet{list-style: none; text-align: center;}
+.accueil .section2b #tabs .onglet li{display: inline-block;}
+.accueil .section2b #tabs .onglet #focus1{background-color: #0094a5;}
+.accueil .section2b #tabs .onglet li a{display: inline-block; padding: 0.3rem 0; margin: 0 0.8rem; width: 13rem; font-size: 0.688rem; background-color: #6dbcd5; border-top-left-radius: 10px; border-top-right-radius: 10px; color: white;}
+.accueil .section2b #tabs .onglet li a:focus{background-color: #0094a5;}
+.accueil .section2b #tabs .block1 .entête{margin: 1.5rem 0;}
+.accueil .section2b #tabs .block2 .corps .ss-corps p,
+.accueil .section2b #tabs .block2 .corps .ss-corps ul li{color: white;}
+.accueil .section3{margin-top: 1.5rem;}
+.accueil .section3 div{margin: 0 auto;}
+.accueil .section3 div p{text-align: justify; font-size: 0.75rem; line-height: 1.6rem;}
+.accueil .section3 div p:first-child {margin-bottom: 1rem}
+
+
+/* ---------- FONCTIONNEMENT ---------- */
+
+.fonctionnement .section1{text-align: center;}
+.fonctionnement .section1 .block{margin-bottom: 1.5rem;}
+.fonctionnement .section1 .block img{margin-bottom: 0.4rem;}
+.fonctionnement .section1 .block .part1{font-size: 1.111rem; font-weight: bold;}
+.fonctionnement .section1 .block .part2{font-size: 0.76rem;}
+.fonctionnement .section2{padding: 1.5rem 0;text-align: center;background-color: #fbb900;;}
+.fonctionnement .section2 div div{margin: 0 auto;}
+.fonctionnement .section2 p,
+.fonctionnement .section2 span{font-size: 1.688rem; font-weight: bold; line-height: 2.6rem;}
+.fonctionnement .section2 span{color: white;}
+.fonctionnement .section3 .contenu .block{margin-top: 2rem; position: relative;}
+.fonctionnement .section3 .contenu .block .ancre{position: absolute; top: -4rem;}
+.fonctionnement .section3 .contenu .block img{display: none; position: absolute; top: 8rem; left: -7rem; width: 5.5rem;}
+.fonctionnement .section3 .contenu .block p,
+.fonctionnement .section3 .contenu .block ul li{font-size: 0.813rem; list-style: none;  line-height: 1.3rem;}
+.fonctionnement .section3 .contenu .block .titre{margin-bottom: 0.5rem; font-weight: bold;}
+.fonctionnement .section3 .contenu .block ul li.liste-img{
+    margin-left: 1.1rem;
+}
+.fonctionnement .section3 .contenu .block ul li.liste-img:before{
+    content: '';
+    display: inline-block;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-image: url('../images/site/liste.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+}
+.fonctionnement .section3 .contenu .block ul.ss-liste li{margin-left: 1.7rem; list-style-type: '- ';}
+
+/* ---------- CONTACT ---------- */
+
+    /* ----- NOUS CONTACTER ----- */
+
+.contact .section2{position: relative;}
+.contact .section2 .contenant .block1{margin-bottom: 2rem;}
+.contact .section2 .contenant .block{padding: 1.3rem 1.64rem; box-shadow: 4px 0px 10px rgb(0 0 0 / 30%); border-radius: 15px; background-color: white;}
+.contact .section2 .contenant .block .image1{display: none;}
+.contact .section2 .contenant .block .image1 img{margin-top: 4rem; width: 100%;}
+.contact .section2 .contenant .block .ss-block .part1{font-size: 1.338rem;}
+.contact .section2 .contenant .block .ss-block .part2{font-size: 1.9rem; font-weight: bold;}
+.contact .section2 .contenant .block .ss-block .part3{margin-top: 0.6rem; font-size: 0.75rem;}
+.contact .section2 .contenant .block .ss-block .image2{display: none; margin-top: 0.7rem;}
+.contact .section2 .contenant .block a{margin-top: 1.2rem; padding: 0.4rem 1rem; width: auto; font-size: 1.125rem; background-color: #009196; border-radius: 30px; color: white; text-align: center;}
+.contact .section2 .vide{display: none; background-color: #fbb900; position: absolute; z-index: -1; width: 100%;}
+
+    /* ----- section1 ----- */
+
+.contact .section1{text-align: center;}
+.contact .section1 .container .validation{font-size: 1.5rem; color: red; margin-bottom: 1rem;}
+.contact .section1 .container .entête{margin-bottom: 0.4rem;}
+.contact .section1 .container .entête .part1,
+.contact .section1 .container .entête .part2{font-size: 1.25rem;}
+.contact .section1 .container .entête .part2{margin: 1.6rem 0 1rem; font-weight: bold;}
+.contact .section1 .container .entête .part3{font-size: 0.873rem;}
+.contact .section1 .container form .erreur{margin-top: 0.3rem; color: red; text-align: start; font-size: 0.625rem;}
+.contact .section1 .container form input,
+.contact .section1 .container form textarea{margin-top: 1rem; padding: 0.4rem 1rem; font-size: 0.625rem; border: solid 1px #0094a5; border-radius: 5px;}
+.contact .section1 .container form textarea{min-height: 6rem; min-width: 100%; font-family: 'Sora', sans-serif;}
+.contact .section1 .container form #cv{margin-top: 1rem; height: 1.7rem; min-width: 7.5rem; border-radius: 10rem; font-size: 0.531rem; background-color: #fbb900; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.contact .section1 .container form #input_cv{position: absolute; visibility: hidden;}
+.contact .section1 .container form .vide{display: none;}
+.contact .section1 .container form .envoyer{margin: 0.5rem auto 0; min-width: 8.4rem; height: 4rem; background: center / contain no-repeat  url("../images/site/bg_envoyer.png");}
+.contact .section1 .container form input[type="submit"]{margin: 0 auto; padding-bottom: 1.2rem; font-weight: bold; font-size: 0.875rem; border: none; color: white; background-color: transparent;}
+
+
+/* ---------- FOOTER ---------- */
+
+footer{padding: 2rem 0 4rem; margin-top: 1.5rem; background-color: #004069; box-shadow: 1px -5px 5px rgb(0 0 0 / 30%);}
+footer .cadre{margin: 0 auto; text-align: center;}
+footer .cadre .logo{margin: 1rem auto 0;}
+footer .cadre .adresse{margin-top: 1rem;}
+footer .cadre a,
+footer .cadre .adresse p{color: white;}
+footer .cadre .logo img{
+    width: 100%;
+}
+footer .cadre a{display: block; font-size: 0.625rem;}
+footer .cadre a:nth-child(even){ margin: 0.3rem 0;}
+footer .cadre .adresse p{font-size: 0.5rem;}
+
+
+
+/* MEDIA QUERY */
+@media (min-width: 330px) {
+
+    .nav-bar .navbar .navbar-brand img{width: 11rem;}
+    .nav-bar .navbar .navbar-toggler{width: 2.5rem;}
+    .nav-bar .navbar .navbar-toggler .burger{height: 0.25rem;}    
+    .nav-bar .navbar .navbar-toggler .burger::before,
+    .nav-bar .navbar .navbar-toggler .burger::after{height: 0.25rem;}
+    .nav-bar .navbar .navbar-toggler .burger::before{transform: translateY(-0.625rem);}
+    .nav-bar .navbar .navbar-toggler .burger::after{transform: translateY(0.625rem);}
+
+    .accueil .section2 .block1 .image img {width: 60%;}
+}
+
+@media (min-width: 440px) {
+
+    .contact .section2 .contenant .block .image1{display: block;}
+    .contact .section2 .contenant .block .ss-block{width: 75%;}
+}
+
+
+@media (min-width: 576px) {
+
+    html{font-size: 105%;}
+
+    .nav-bar .navbar .navbar-brand img{width: 14rem;}
+
+    .contact .section2 .contenant .block1 {margin-bottom: 4rem;}
+    .contact .section2 .vide{display: block; top: 15.2rem; height: 11rem;}
+
+    footer .cadre{text-align: left;}
+    footer .cadre a{display: inline-block;}
+    footer .cadre a{margin-right: 3rem!important;}
+    footer .cadre .logo{margin-left: 0;}
+
+}
+
+@media (min-width: 768px) {
+
+    .accueil .section2 .block1 .image img {width: 70%;}
+
+    .contact .section2 .contenant .block .image1{text-align: right;}
+    .contact .section2 .contenant .block .image1 img {width: 80%;}
+    .contact .section2 .vide{top: 12.6rem; height: 11rem;}
+}
+
+
+@media (min-width: 992px) {
+
+    html{font-size: 110%;}
+
+    header{display: block; background: linear-gradient(0.25turn, rgb(204,234,237) 65%, rgb(0,148,165)); text-align: center;}
+    header .container img{margin: 1rem; width: 14rem;}
+
+    .nav-bar .navbar ul li a.nav-link:hover::after{width: 86%;}
+
+    .nav-bar .navbar ul li:first-child{margin-top: 0;}
+    .nav-bar .block-connexion{display: block;}
+    .nav-bar .block-connexion .ss-block-connexion{display: block; }
+    .nav-bar .block-connexion-scroll-logo{display: block;}
+    .nav-bar .block-connexion-scroll{display: block;}
+    
+
+        /* --- BURGER --- */
+
+    .nav-bar .navbar .navbar-brand{ display: none;}
+    .nav-bar .navbar ul li{padding: 0.6rem 0;}
+    .nav-bar .navbar ul li a.connecter{display: none;}
+
+        /* --- FIN BURGER --- */
+
+    .accueil .section2a{display: none;}
+    .accueil .section2b{display: block;}
+    .accueil .section2b .block1 .image {text-align: right;}
+    .accueil .section2b .block1 .image img{width: 57%;}
+
+    .fonctionnement .section3 .contenu .block img{display: initial;}
+
+    .contact .section1 .container form .vide{display: initial;}
+    .contact .section2 .contenant .block1{margin-bottom: 0;}
+    .contact .section2 .contenant .block .image1{display: none;}
+    .contact .section2 .contenant .block .ss-block{width: 100%; text-align: center;}
+    .contact .section2 .contenant .block .ss-block .image2{display: inline-block;}
+    .contact .section2 .vide{top: 12.8rem; height: 16rem;}
+}
+
+@media (min-width: 1200px) {
+
+    html{font-size: 120%;}
+
+    .nav-bar .block-connexion{bottom: -0.717rem; }
+
+    .fonctionnement .section3 .contenu .block img{left: -10rem; width: 7rem;}
+
+    .contact .section2 .contenant .block {padding: 1.3rem 1.8rem;}
+
+    footer .cadre a{margin-right: 2rem!important;}
+
+}
+
+
+@media (min-width: 1400px) {
+
+    .nav-bar .block-connexion{right: 3rem;}
+
+    .accueil .section2b .block1 .image img {width: 48%;}
+
+    .contact .section2 .contenant .block {padding: 1.3rem 1.05rem;}
+}

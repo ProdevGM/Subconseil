@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteRule     ^$                                      /index.php                                              [L]
+
+RewriteRule     ^fonctionnement/$                       /fonctionnement                                         [L,R=301]
+RewriteRule     ^fonctionnement$                        /fonc.php                                     [L]
+
+RewriteRule     ^redirection/$                       /redirection                                         [L,R=301]
+RewriteRule     ^redirection$                        /fonc.php                                     [L]
+
+RewriteRule     ^contact/$                              /contact                                                [L,R=301]
+RewriteRule     ^contact$                               /cont.php                                            [L]
+
+RewriteRule     ^contact/entreprise/$                   /contact/entreprise                                     [L,R=301]
+RewriteRule     ^contact/entreprise$                    /cont.php?contact=su                                 [L]
+
+RewriteRule     ^contact/freelance/$                    /contact/freelance                                      [L,R=301]
+RewriteRule     ^contact/freelance$                     /cont.php?contact=fl                                 [L]
